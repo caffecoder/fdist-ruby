@@ -2,7 +2,7 @@
 # @author: Adam Kubica (caffecoder) <caffecoder@kaizen-step.com>
 #
 
-require "ftools"
+require 'ftools'
 
 #
 # Class for manage hashed file distribution.
@@ -15,7 +15,8 @@ class FileDistribution
   # - prefix: directory prefix.
   def initialize(prefix)
     @ext = '.dat'
-    @path = File.expand_path(prefix)
+    @prefix = File.expand_path(prefix)
+    @path = @prefix
   end
 
   # Params:
@@ -38,7 +39,7 @@ class FileDistribution
   def hex_path(id)
     hex = "%x" % id
     hex = '0%s' % hex if hex.length % 2 != 0
-    @path = File.join(@path,hex.scan(/../))
+    @path = File.join(@prefix,hex.scan(/../))
     @path += @ext
   end
 
