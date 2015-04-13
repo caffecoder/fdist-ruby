@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name            = 'file_distribution'
-  s.version         = '0.1.0'
+  s.version         = '0.1.1'
   s.summary         = "Simple file distribution library."
   s.description     = "Simple library that allows organize distribution of files within hex based tree."
   s.authors         = ["Adam Kubica"]

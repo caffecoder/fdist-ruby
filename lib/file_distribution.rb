@@ -2,8 +2,6 @@
 # @author: Adam Kubica (caffecoder) <caffecoder@kaizen-step.com>
 #
 
-require 'ftools'
-
 #
 # Class for manage hashed file distribution.
 #
@@ -49,7 +47,7 @@ class FileDistribution
   # Raises a SystemCallError if the file cannot be renamed.
   def rename_from(path)
     dst_dir = File.dirname(@path)
-    File.mkpath(dst_dir) unless File.exists?(dst_dir)
+    FileUtils.mkpath(dst_dir) unless File.exists?(dst_dir)
 
     File.rename(path,@path)
   end
