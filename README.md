@@ -1,6 +1,8 @@
 Simple RUBY file distribution library.
 ========================================
 
+[![Build Status](https://travis-ci.org/caffecoder/fdist-ruby.svg)](https://travis-ci.org/caffecoder/fdist-ruby)
+
 ## Description:
 
 Simple library that allows organize distribution of files within hex based tree.
