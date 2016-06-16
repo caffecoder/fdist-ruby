@@ -1,7 +1,7 @@
 Simple RUBY file distribution library.
 ========================================
 
-[![Build Status](https://travis-ci.org/caffecoder/fdist-ruby.svg)](https://travis-ci.org/caffecoder/fdist-ruby)
+[![Build Status](https://travis-ci.org/caffecoder/fdist-ruby.svg?branch=master)](https://travis-ci.org/caffecoder/fdist-ruby)
 
 ## Description:
 
