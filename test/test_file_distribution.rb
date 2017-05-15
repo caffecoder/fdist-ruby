@@ -1,5 +1,5 @@
 #
-# @author: Adam Kubica (caffecoder) <caffecoder@kaizen-step.com>
+# @author: Adam Kubica (xcdr) <xcdr@kaizen-step.com>
 #
 
 require 'file_distribution'
