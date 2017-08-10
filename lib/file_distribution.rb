@@ -6,7 +6,6 @@
 # Class for manage hashed file distribution.
 #
 class FileDistribution
-
   # Creates new instance with directory prefix.
   #
   # Params:
@@ -22,7 +21,7 @@ class FileDistribution
   def set_extension(ext)
     @ext = ext
 
-    @ext = sprintf('.%s', ext) if !ext.empty? && ext.chars.first != '.'
+    @ext = format('.%s', ext) if !ext.empty? && ext.chars.first != '.'
   end
 
   # Returns Destination path.
@@ -33,8 +32,8 @@ class FileDistribution
   # Params:
   # - id: database file ID etc.
   def hex_path(id)
-    hex = sprintf('%x', id)
-    hex = sprintf('0%s', hex) if hex.length.odd?
+    hex = format('%x', id)
+    hex = format('0%s', hex) if hex.length.odd?
     @path = File.join(@prefix, hex.scan(/../))
     @path += @ext
   end
